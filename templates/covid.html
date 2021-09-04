@@ -1,1 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Covid Prediction</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="./static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="./static/css2/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<body >
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#Fantastic Four">Contact Us</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center orange-text">Covid 19 Prediction</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">Predict the probability of Covid 19
+        <br>
+        </h5>
+      </div>
+
+              <div class="row">
+    <form action='/predict' method="POST" class="col s12">
+      <div class="row">
+        <div class="input-field col s4">
+            <label for="first_name"><b>Temperature</b></label>
+            <br>
+          <input   id="first_name" name='Temperature'type="text" class="validate">
+        </div>
+        <div class="input-field col s4">
+
+          <label for="last_name"><b>Oxygen Level</b></label>
+            <br>
+          <input id="last_name"  name="Oxygen" type="text" class="validate">
+
+        </div>
+
+        <div class="input-field col s4">
+            <label for="_name"><b>Heart Beat</b></label>
+            <br>
+          <input id="_name" name="Humidity" type="text" class="validate">
+
+        </div>
+
+      </div>
+
+      <div class="row center">
+
+          <button type="submit" class="btn-large waves-effect waves-light orange">Predict Probability</button>
+      </div>
+    </form>
+      </div>
+
+      <br><h4 align="center"><b>{{pred}}</b></h4>
+        <br>
+
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
+              <h5 class="center">Search for the nearest medical center</h5>
+            <p class="light"></p>
+          </div>
+            <form action = 'http://127.0.0.1:5000/covid' method = 'POST'>
+              <button class="btn waves-effect waves-light" type="submit" name="opt" value="index1">Check
+    <i class="material-icons right">send</i>
+              </button>
+            </form>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
+            <h5 class="center">Feature2</h5>
+
+            <p class="light"></p>
+          </div>
+            <button class="btn waves-effect waves-light" type="submit" name="action">Check
+    <i class="material-icons right">send</i>
+              </button>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
+            <h5 class="center">Feature3</h5>
+              <p>
+                  <button class="btn waves-effect waves-light" type="submit" name="action">Check
+    <i class="material-icons right">send</i></button>
+              </p>
+ </div>
+        </div>
+
+
+      </div>
+
+    </div>
+    <br><br>
+  </div>
+  </div>
+
+  <footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text"><a name = "Fantastic Four">Fantastic Four</a></h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project which is of significant help in this pandemic,this allows you to know probability of you having covid sitting at your home </p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Team Members</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Anashua</a></li>
+            <li><a class="white-text" href="#!">Ankitha C</a></li>
+            <li><a class="white-text" href="#!">Chaitra Bhat</a></li>
+            <li><a class="white-text" href="#!">Policharla Sai Sailaja</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="https://www.linkedin.com/in/anashua-krittika-dastidar-108928208/">Click here</a></li>
+            <li><a class="white-text" href="https://www.linkedin.com/in/ankitha-c-157090205/">Click here</a></li>
+            <li><a class="white-text" href="https://www.linkedin.com/in/chaitra-bhat-71372a207/">Click here</a></li>
+            <li><a class="white-text" href="https://www.linkedin.com/in/sailaja-policharla-b1a14720b/">Click here</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src=".js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
 
