@@ -13,13 +13,13 @@ We integrated Chat-bot to our website , for this we used IBM Watson Studio and i
 Machine Learning, Flask, Python, HTML, CSS, Javascript, IBM Watson Studio
 
 ## Team Members:
-1. Chaitra Bhat - https://github.com/Chaitra-Bhat383
+Chaitra Bhat - https://github.com/Chaitra-Bhat383
 
-2. Ankitha C - https://github.com/Ankithac45
+Ankitha C - https://github.com/Ankithac45
 
-3. Anashua - https://github.com/Anashua
+Anashua - https://github.com/Anashua
 
-4. Sailaja - https://github.com/sailaja03
+Sailaja - https://github.com/sailaja03
 
 ## Video Link:
 https://www.youtube.com/watch?v=NXlOfHX7-24
