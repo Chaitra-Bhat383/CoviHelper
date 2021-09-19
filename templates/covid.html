@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
   <title>Covid Prediction</title>
 
+
+
+
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="./static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -12,17 +15,22 @@
 </head>
 
 <body >
+
+
+
+
+
   <nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
+      <div class="nav-wrapper container"><a id="logo-container"> <b>CoviHelper</b></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#Fantastic Four">Contact Us</a></li>
+          <li><b>Contact Us</b></li>
       </ul>
 
       <ul id="nav-mobile" class="sidenav">
         <li><a href="#">Navbar Link</a></li>
       </ul>
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-    </div>
+      </div>
   </nav>
 
 
@@ -31,7 +39,7 @@
       <br><br>
       <h1 class="header center orange-text">Covid 19 Prediction</h1>
       <div class="row center">
-        <h5 class="header col s12 light">Predict the probability of Covid 19
+          <h5 class="header col s12 light"><b>Predict the probability of Covid 19</b>
         <br>
         </h5>
       </div>
@@ -82,7 +90,7 @@
         <div class="col s12 m4">
           <div class="icon-block">
             <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
-              <h5 class="center">Search for the nearest medical center</h5>
+              <h5 class="center"><b>Nearest medical center</b></h5>
             <p class="light"></p>
           </div>
             <form action = 'http://127.0.0.1:5000/covid' method = 'POST'>
@@ -91,25 +99,26 @@
               </button>
             </form>
         </div>
-
-        <div class="col s12 m4">
+          <div class="col s12 m4">
           <div class="icon-block">
             <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">Feature2</h5>
+            <h5 class="center"><b>ChatBot</b></h5>
 
             <p class="light"></p>
           </div>
-            <button class="btn waves-effect waves-light" type="submit" name="action">Check
+          <button class="btn waves-effect waves-light" type="submit" name="opt" value="index2">Check Below
     <i class="material-icons right">send</i>
               </button>
-        </div>
+          </div>
+
+
 
         <div class="col s12 m4">
           <div class="icon-block">
             <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Feature3</h5>
+              <h5 class="center"><b>For More Information</b></h5>
               <p>
-                  <button class="btn waves-effect waves-light" type="submit" name="action">Check
+                  <button class="btn waves-effect waves-light" type="submit" name="action"><a href="https://covid19.who.int/?adgroupsurvey={adgroupsurvey}&gclid=Cj0KCQjwnJaKBhDgARIsAHmvz6ftZxMp7lAA3jUiANIenzG6LgpObpa-3wUxmnDiLsPDj97qqf8RJzsaAhI0EALw_wcB" style="color: white">Check</a>
     <i class="material-icons right">send</i></button>
               </p>
  </div>
@@ -127,7 +136,7 @@
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="white-text"><a name = "Fantastic Four">Fantastic Four</a></h5>
+          <h5 class="white-text">Defty Crackers</h5>
           <p class="grey-text text-lighten-4">We are a team of college students working on this project which is of significant help in this pandemic,this allows you to know probability of you having covid sitting at your home </p>
 
 
@@ -160,6 +169,23 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src=".js/materialize.js"></script>
   <script src="js/init.js"></script>
+
+   <script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "1f55efea-4e79-4f8b-8edc-4851aae73779", // The ID of this integration.
+      region: "au-syd", // The region your integration is hosted in.
+      serviceInstanceID: "5b1cc0df-ba97-453e-b495-cb0cd4fb484b", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" +
+      (window.watsonAssistantChatOptions.clientVersion || 'latest') +
+      "/WatsonAssistantChatEntry.js"
+    document.head.appendChild(t);
+  });
+</script>
+
 
   </body>
 </html>
