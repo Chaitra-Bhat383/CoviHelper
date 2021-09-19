@@ -1,1 +1,1 @@
-<?php include_once("page.html"); ?>
+<?php include_once("covid.html"); ?>
