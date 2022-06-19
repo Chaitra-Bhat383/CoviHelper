@@ -14,5 +14,9 @@ Machine Learning, Flask, Python, HTML, CSS, Javascript, IBM Watson Studio
 
 ## Video Link:
 
+https://www.youtube.com/watch?v=NXlOfHX7-24
+
+
+
 
 
